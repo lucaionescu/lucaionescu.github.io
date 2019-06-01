@@ -1,19 +1,39 @@
 body {
   font-family: "aleoregular";
-  font-size: 25px;
+  font-size: 15px;
 }
 
-.header {
+h2 {
+  margin: 0px;
+  margin-top: 40px;
+  margin-bottom: 15px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+h3 {
+  margin: 0px;
+  margin-top: 40px;
+  margin-bottom: 1px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#content {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 520px;
   width: 100%;
-  height: 650px;
-  background-position: 50%;
 }
 
-.header-text {
-  width: 200px;
-  padding: 16px;
-  margin: 22px 12px;
-  vertical-align: top;
-  font-size: .9em;
-  line-height: 1.1em;
+.link-underline {
+  text-decoration: underline;
+}
+
+.link-underline:hover {
+  text-decoration: none;
+}
+
+.text-indent {
+  margin-left: 15px;
 }
