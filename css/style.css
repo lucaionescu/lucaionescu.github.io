@@ -1,0 +1,19 @@
+body {
+  font-family: "aleoregular";
+  font-size: 25px;
+}
+
+.header {
+  width: 100%;
+  height: 650px;
+  background-position: 50%;
+}
+
+.header-text {
+  width: 200px;
+  padding: 16px;
+  margin: 22px 12px;
+  vertical-align: top;
+  font-size: .9em;
+  line-height: 1.1em;
+}
