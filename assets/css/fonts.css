@@ -1,55 +1,55 @@
 @font-face {
   font-family: 'merriweather_black_regular';
-  src: url('/fonts/merriweather/merriweather-black-webfont.woff2') format('woff2');
+  src: url('/assets/fonts/merriweather/merriweather-black-webfont.woff2') format('woff2');
   font-weight: 900;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'merriweather_black_italic';
-  src: url('/fonts/merriweather/merriweather-blackitalic-webfont.woff2') format('woff2');
+  src: url('/assets/fonts/merriweather/merriweather-blackitalic-webfont.woff2') format('woff2');
   font-weight: 900;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'merriweather_bold';
-  src: url('/fonts/merriweather/merriweather-bold-webfont.woff2') format('woff2');
+  src: url('/assets/fonts/merriweather/merriweather-bold-webfont.woff2') format('woff2');
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'merriweather_bold_italic';
-  src: url('/fonts/merriweather/merriweather-bolditalic-webfont.woff2') format('woff2');
+  src: url('/assets/fonts/merriweather/merriweather-bolditalic-webfont.woff2') format('woff2');
   font-weight: 700;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'merriweather_italic';
-  src: url('/fonts/merriweather/merriweather-italic-webfont.woff2') format('woff2');
+  src: url('/assets/fonts/merriweather/merriweather-italic-webfont.woff2') format('woff2');
   font-weight: 400;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'merriweather_light_regular';
-  src: url('/fonts/merriweather/merriweather-light-webfont.woff2') format('woff2');
+  src: url('/assets/fonts/merriweather/merriweather-light-webfont.woff2') format('woff2');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'merriweather_light_italic';
-  src: url('/fonts/merriweather/merriweather-lightitalic-webfont.woff2') format('woff2');
+  src: url('/assets/fonts/merriweather/merriweather-lightitalic-webfont.woff2') format('woff2');
   font-weight: 300;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'merriweather_regular';
-  src: url('/fonts/merriweather/merriweather-regular-webfont.woff2') format('woff2');
+  src: url('/assets/fonts/merriweather/merriweather-regular-webfont.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
 }
