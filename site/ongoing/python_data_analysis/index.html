@@ -5,7 +5,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Reading List</title>
+  <title>Python Data Analysis Tips</title>
   <meta name="author" content="Luca Ionescu">
   <meta name="viewport" content="width=device-width">
 
@@ -28,8 +28,8 @@
       </header>
       <div class="post-content">
         <p><i><small>last update: 2019/07/07</small></i><br><br></p>
-        A continuously updated list of short tips for data analysis with Python
-        and the common tools Pandas, NumPy and Jupyter.
+        A continuously updated list of short tips for data analysis and machine learning
+        with Python and the common tools Pandas, NumPy and Jupyter.
         <p>
           <ul>
             <li class="python-tip">
@@ -38,6 +38,17 @@
                 from IPython.core.display import display, HTML
                 <br><br>
                 display(HTML("&lt;style>.container { width:100% !important; }&lt;/style>"))
+              </pre>
+            </li>
+            <li class="python-tip">
+              <strong>Print all of the outputs of a Jupyter Notebook cell</strong>
+              <br>
+              Usually, only the last output of a cell gets printed and for the others,
+              one has to call the <span class="inline-code">print</span> function.
+              <pre class="code-snippet">
+                from IPython.core.interactiveshell import InteractiveShell
+                <br><br>
+                InteractiveShell.ast_node_interactivity = "all"
               </pre>
             </li>
             <li class="python-tip">
