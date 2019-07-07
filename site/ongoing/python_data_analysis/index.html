@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Reading List</title>
+  <meta name="author" content="Luca Ionescu">
+  <meta name="viewport" content="width=device-width">
+
+  <link rel='stylesheet' href="/assets/css/fonts.css" type='text/css'>
+  <link rel="stylesheet" href="/assets/css/style.css?v=1.0" type="text/css">
+</head>
+
+<body>
+  <div id="content">
+    <div class="back-to-main-wrapper">
+      <a class="back-to-main link-underline" href="/">back to lucaionescu.github.io</a>
+    </div>
+    <div class="back-to-main-wrapper">
+      <a class="back-to-main link-underline" href="/site/ongoing/">go back</a>
+    </div>
+    <article>
+      <header class="post-header">
+        <p class="post-date"> Jul 7, 2019</p>
+        <h2 class="post-title">Python Data Analysis Tips</h2>
+      </header>
+      <div class="post-content">
+        <p><i><small>last update: 2019/07/07</small></i><br><br></p>
+        A continuously updated list of short tips for data analysis with Python
+        and the common tools Pandas, NumPy and Jupyter.
+        <p>
+          <ul>
+            <li class="python-tip">
+              <strong>Wider Jupyter Notebook cells</strong>
+              <pre class="code-snippet">
+                from IPython.core.display import display, HTML
+                <br><br>
+                display(HTML("&lt;style>.container { width:100% !important; }&lt;/style>"))
+              </pre>
+            </li>
+            <li class="python-tip">
+              <strong>Handle paths with <span class="inline-code">pathlib</span></strong>
+              <br>
+              This avoids multiple string concatenations and working with <span class="inline-code">os.path.join</span>
+              <br>
+              There are also of course methods available for directory iteration,
+              path manipulation or directory/file checks.
+              <pre class="code-snippet">
+                from pathlib import Path
+                <br><br>
+                data_path = Path('path/to/dataset')
+                <br>
+                train_path = data_path / 'train_data'
+                <br>
+                test_path = data_path / 'test_data'
+                <br><br>
+                for file in train_path.iterdir():
+                    <br>
+                    &emsp;with file.open() as f:
+                      <br>
+                      &emsp;&emsp;...
+              </pre>
+            </li>
+            <li class="python-tip">
+              <strong>Matrix multiplication using @</strong>
+              <pre class="code-snippet">
+                >>> import numpy as np
+                <br><br>
+                >>> x = np.array([[1,2,3], [4,5,6]])
+                <br>
+                >>> y = np.array([[2,3], [4,5], [6,7]])
+                <br>
+                >>> x @ y
+                <br>
+                array([[28, 34],
+                <br>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; [64, 79]])
+              </pre>
+            </li>
+          </ul>
+        </p>
+      </div>
+    </article>
+  </div>
+</body>
+
+</html>
