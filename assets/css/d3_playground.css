@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: "merriweather_regular";
+}
+
+ul {
+  list-style-type: none;
+}
+
+nav ul {
+  line-height: 2em;
+  background-color: black;
+  color: white;
+  scrollbar-color: white;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  margin-top: 0px;
+  border-right: 1px solid black;
+  width: 200px;
+  height: 100%;
+  overflow: hidden;
+  overflow-y: scroll;
+  position: fixed;
+}
+
+.header {
+  background-color: black;
+  color: white;
+  border-bottom: 1px solid white;
+  height: 100px;
+}
+
+.page-title {
+  font-size: 1.5em;
+  padding-top: 30px;
+  padding-left: 50px;
+}
+
+.sketch-list {
+}
+
