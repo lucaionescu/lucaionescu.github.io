@@ -27,7 +27,7 @@
         <h2 class="post-title">Python Data Analysis Tips</h2>
       </header>
       <div class="post-content">
-        <p><i><small>last update: 2019/07/07</small></i><br><br></p>
+        <p><i><small>last update: 2019/07/10</small></i><br><br></p>
         A continuously updated list of short tips for data analysis and machine learning
         with Python and the common tools Pandas, NumPy and Jupyter.
         <p>
@@ -35,10 +35,9 @@
             <li class="python-tip">
               <strong>Wider Jupyter Notebook cells</strong>
               <pre class="code-snippet">
-                from IPython.core.display import display, HTML
-                <br><br>
-                display(HTML("&lt;style>.container { width:100% !important; }&lt;/style>"))
-              </pre>
+from IPython.core.display import display, HTML
+
+display(HTML("&lt;style>.container { width:100% !important; }&lt;/style>"))</pre>
             </li>
             <li class="python-tip">
               <strong>Print all of the outputs of a Jupyter Notebook cell</strong>
@@ -46,10 +45,9 @@
               Usually, only the last output of a cell gets printed and for the others,
               one has to call the <span class="inline-code">print</span> function.
               <pre class="code-snippet">
-                from IPython.core.interactiveshell import InteractiveShell
-                <br><br>
-                InteractiveShell.ast_node_interactivity = "all"
-              </pre>
+from IPython.core.interactiveshell import InteractiveShell
+
+InteractiveShell.ast_node_interactivity = "all"</pre>
             </li>
             <li class="python-tip">
               <strong>Handle paths with <span class="inline-code">pathlib</span></strong>
@@ -59,36 +57,41 @@
               There are also of course methods available for directory iteration,
               path manipulation or directory/file checks.
               <pre class="code-snippet">
-                from pathlib import Path
-                <br><br>
-                data_path = Path('path/to/dataset')
-                <br>
-                train_path = data_path / 'train_data'
-                <br>
-                test_path = data_path / 'test_data'
-                <br><br>
-                for file in train_path.iterdir():
-                    <br>
-                    &emsp;with file.open() as f:
-                      <br>
-                      &emsp;&emsp;...
-              </pre>
+from pathlib import Path
+
+data_path = Path('path/to/dataset')
+train_path = data_path / 'train_data'
+test_path = data_path / 'test_data'
+
+for file in train_path.iterdir():
+    with file.open() as f:
+        ...</pre>
             </li>
             <li class="python-tip">
               <strong>Matrix multiplication using @</strong>
               <pre class="code-snippet">
-                >>> import numpy as np
-                <br><br>
-                >>> x = np.array([[1,2,3], [4,5,6]])
-                <br>
-                >>> y = np.array([[2,3], [4,5], [6,7]])
-                <br>
-                >>> x @ y
-                <br>
-                array([[28, 34],
-                <br>
-                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; [64, 79]])
-              </pre>
+>>> import numpy as np
+
+>>> x = np.array([[1,2,3], [4,5,6]])
+>>> y = np.array([[2,3], [4,5], [6,7]])
+>>> x @ y
+array([[28, 34],
+       [64, 79]])</pre>
+            </li>
+            <li class="python-tip">
+              <strong>Run scripts using the <span class="inline-code">-i</span> argument</strong>
+              <br> This has two advantages:
+              <br>
+              1. Python will stay in the interpreter and you can still evaluate statements
+              and run code using the scripts variables and functions.
+              <br>
+              2. If an error occurs, you can call the Python debugger
+              while being in the interpreter like this:
+              <pre class="code-snippet">
+import pdb
+pdb.pm()</pre>
+              <a class="link-underline" target="_blank"
+                href="http://www.bnikolic.co.uk/blog/python-running-cline.html?source=post_stats_page---------------------------">Source</a>
             </li>
           </ul>
         </p>
