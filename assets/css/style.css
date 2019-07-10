@@ -47,7 +47,7 @@ ul {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 50px;
-  max-width: 500px;
+  max-width: 550px;
   width: 100%;
 }
 
@@ -163,7 +163,8 @@ ul {
   padding-left: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
-  white-space: normal;
+  white-space: pre;
   margin-top: 5px;
+  margin-bottom: 5px;
   border-radius: 3px;
 }
