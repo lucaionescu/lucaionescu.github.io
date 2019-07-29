@@ -7,7 +7,7 @@
 
   <meta charset="utf-8">
   <meta name="author" content="Luca Ionescu">
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel='stylesheet' href="/assets/css/fonts.css" type='text/css'>
   <link rel="stylesheet" href="/assets/css/style.css?v=1.0" type="text/css">
@@ -32,6 +32,7 @@
         with Python and the common tools Pandas, NumPy and Jupyter.
         <p>
           <ul>
+
             <li class="python-tip">
               <strong>Wider Jupyter Notebook cells</strong>
               <pre class="code-snippet">
@@ -39,6 +40,7 @@ from IPython.core.display import display, HTML
 
 display(HTML("&lt;style>.container { width:100% !important; }&lt;/style>"))</pre>
             </li>
+
             <li class="python-tip">
               <strong>Print all of the outputs of a Jupyter Notebook cell</strong>
               <br>
@@ -49,6 +51,7 @@ from IPython.core.interactiveshell import InteractiveShell
 
 InteractiveShell.ast_node_interactivity = "all"</pre>
             </li>
+
             <li class="python-tip">
               <strong>Handle paths with <span class="inline-code">pathlib</span></strong>
               <br>
@@ -67,6 +70,7 @@ for file in train_path.iterdir():
     with file.open() as f:
         ...</pre>
             </li>
+
             <li class="python-tip">
               <strong>Matrix multiplication using @</strong>
               <pre class="code-snippet">
@@ -78,6 +82,7 @@ for file in train_path.iterdir():
 array([[28, 34],
        [64, 79]])</pre>
             </li>
+
             <li class="python-tip">
               <strong>Run scripts using the <span class="inline-code">-i</span> argument</strong>
               <br> This has two advantages:
@@ -92,6 +97,22 @@ import pdb
 pdb.pm()</pre>
               <a class="link-underline" target="_blank"
                 href="http://www.bnikolic.co.uk/blog/python-running-cline.html?source=post_stats_page---------------------------">Source</a>
+            </li>
+
+            <li class="python-tip">
+              <strong>Get higher-resolution matplotlib graphics for Retina screens</strong>
+              <pre class="code-snippet">
+%config InlineBackend.figure_format ='retina'</pre>
+            </li>
+
+            <li class="python-tip">
+              <strong>Customize your Jupyter Notebook with custom CSS</strong>
+              <br>
+              You can use a custom CSS file that has to be located in <span class="inline-code">~/.jupyter/custom/custom.css</span>
+              where you can change the appearance of the notebook.
+              <br>
+              Check out my file <a class="link-underline" target="_blank" href="https://github.com/lucaionescu/dotfiles/blob/master/python/custom.css">in my dotfiles repository</a>,
+              or a more extensive example <a class="link-underline" target="_blank" href="https://github.com/nsonnad/base16-ipython-notebook">here</a>.
             </li>
           </ul>
         </p>
