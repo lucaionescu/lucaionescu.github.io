@@ -3,7 +3,7 @@ html {
 }
 
 a {
-  color: #000000;
+  color: #30303A;
   text-decoration: none;
 }
 
@@ -11,7 +11,8 @@ body {
   font-family: "merriweather_regular";
   font-size: 0.8em;
   line-height: 1.5em;
-  background: #fafafa
+  color: #30303A;
+  background: #fafafa;
 }
 
 h2 {
