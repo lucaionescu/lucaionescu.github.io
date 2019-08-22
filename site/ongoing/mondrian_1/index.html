@@ -11,44 +11,21 @@
 
   <link rel='stylesheet' href="/assets/css/fonts.css" type='text/css'>
   <link rel="stylesheet" href="/assets/css/sketch.css" type="text/css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.js"></script>
+  <script type="text/javascript" src="/assets/js/p5/quicksettings.js"></script>
+  <script type="text/javascript" src="/assets/js/p5/p5.gui.js"></script>
+  <script type="text/javascript" src="sketch.js"></script>
 </head>
 
 <body>
-  <div>
-    <div>
-      <div class="back-to-main-wrapper">
-        <a class="back-to-main link-underline" href="/">back to lucaionescu.github.io</a>
-      </div>
-      <div class="back-to-main-wrapper">
-        <a class="back-to-main link-underline" href="/site/ongoing/index.html#sketches">back to ongoing</a>
-      </div>
-    </div>
-    <div class="description">
-      <header class="post-margin-top">
-        <p class="post-date"> Aug 11, 2019</p>
-        <h2 class="post-title">Mondrian #1</h2>
-      </header>
-      Generate Mondrian-type images using p5.js.
-      The code can be found <a target="_blank" class="link-underline"
-        href="https://github.com/lucaionescu/lucaionescu.github.io/tree/master/site/ongoing/sketches/mondrian_1/sketch.js">here</a>.
-      <br><br>
-      I have to give credit to the great
-      <a target="_blank" class="link-underline"
-        href="https://generativeartistry.com/tutorials/piet-mondrian/">tutorial</a> by Tim Holman,
-      who implemented this in plain JavaScript.
-      <br><br>
-      You can play with some of the parameters using the sliders on the left.
-      <br>
-      Click on the image to generate a new one.
-      <br><br>
-      Download the currently displayed image <a onclick="download_image()" class="link-underline" href="#">here</a>.
-    </div>
-    <div id="js_canvas"></div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.js"></script>
-    <script type="text/javascript" src="/assets/js/p5/quicksettings.js"></script>
-    <script type="text/javascript" src="/assets/js/p5/p5.gui.js"></script>
-    <script type="text/javascript" src="sketch.js"></script>
+  <div class="sketch-container">
+    <button id="generate-button" type="button" onclick="draw()" ontouchstart="draw()">generate</button>
   </div>
+  <a href="/site/ongoing/index.html#sketches" class="link back-to-sketches-link">
+    < back to sketches</a> <a target="_blank" href="https://github.com/lucaionescu/p5-sketches/tree/master/mondrian_1"
+      class="link github-link">github >
+  </a>
 </body>
 
 </html>

@@ -1,11 +1,12 @@
-var canvas = document.getElementById('js_canvas');
 var gui;
-var canvas_size = 550;
+var canvas_w;
+var canvas_h;
+var square_w;
+var square_h;
 var num_splits = 7;
-var square_size = canvas_size / num_splits;
-var x_split_prob = 0.3;
-var y_split_prob = 0.3;
-var color_prob = 0.3;
+var x_split_prob = 0.1;
+var y_split_prob = 0.1;
+var color_prob = 0.2;
 var colors = ['#FF0101', '#0101FD', '#FFF001'];
 var white = '#F9F9F9';
 var black = '#30303A';
@@ -69,23 +70,18 @@ function split_square(x, y) {
   }
 }
 
-function download_image() {
-  save('mondrian_1.png')
-}
-
 function setup() {
-  var canvas = createCanvas(canvas_size, canvas_size);
-  canvas.parent('js_canvas');
+  createCanvas(windowWidth, windowHeight);
   stroke(black);
   strokeWeight(10);
 
-  gui = createGui('Customize!');
+  gui = createGui('customize');
   sliderRange(0, 1, 0.01);
   gui.addGlobals(
     'x_split_prob',
     'y_split_prob',
     'color_prob'
-    );
+  );
 
   noLoop();
 }
@@ -94,13 +90,19 @@ function draw() {
   squares = [{
     x: 0,
     y: 0,
-    width: canvas_size,
-    height: canvas_size
+    width: windowWidth,
+    height: windowHeight
   }];
 
-  for (let i = 0; i < canvas_size; i += square_size) {
-    split_square(i, 0);
-    split_square(0, i);
+  canvas_w = windowWidth;
+  canvas_h = windowHeight;
+  square_w = canvas_w / num_splits;
+  square_h = canvas_h / num_splits;
+
+  for (let i = 0; i < canvas_w; i += square_w) {
+    for (let k = 0; k < canvas_h; k += square_h) {
+      split_square(i, k);
+    }
   }
 
   squares.forEach(s => {
@@ -113,6 +115,7 @@ function draw() {
   });
 }
 
-canvas.addEventListener('click', function () {
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
   draw();
-}, false);
+}

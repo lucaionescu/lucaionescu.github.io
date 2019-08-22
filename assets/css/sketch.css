@@ -1,60 +1,49 @@
 * {
-  padding: 0;
-  margin: 0;
+  font-family: "merriweather_regular", 'Courier';
+  padding: auto;
+  margin: auto;
+  overflow-x: hidden;
 }
 
-body {
+.sketch-container {
+  width: 100%;
+  position: fixed;
   display: flex;
-  max-width: 550px;
-  align-items: center;
   justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 50px;
-  font-family: "merriweather_regular";
-  font-size: 0.8em;
-  line-height: 1.5em;
-  color: #111111;
-  background: #FAFAFA;
+  bottom: 25px;
 }
 
-h2 {
-  margin: 0px;
-  margin-top: 40px;
-  margin-bottom: 15px;
-  padding-right: 5px;
-}
-
-a {
-  color: #111111;
+.link {
+  color: #30303A;
+  position: fixed;
+  font-size: 0.7em;
+  font-weight: bold;
   text-decoration: none;
 }
 
-.back-to-main {
-  font-size: 0.9em;
-}
-
-.back-to-main-wrapper {
-  text-align: right;
-  margin-top: 10px;
-}
-
-.description {
-  margin-bottom: 40px;
-}
-
-.link-underline {
+.link:hover {
   text-decoration: underline;
 }
 
-.link-underline:hover {
-  text-decoration: none;
+.back-to-sketches-link {
+  bottom: 15px;
+  left: 15px;
 }
 
-.post-date {
-  font-size: 0.8em;
+.github-link {
+  bottom: 35px;
+  left: 15px;
 }
 
-.post-title {
-  margin-top: 10px;
+#generate-button {
+  cursor: pointer;
+  background: #fafafa;
+  border: 1px solid #30303A;
+  font-size: 0.7em;
+  font-weight: bold;
+}
+
+#generate-button:active, #generate-button:hover {
+  background: #30303A;
+  color: #fafafa;
 }
