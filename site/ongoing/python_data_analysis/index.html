@@ -15,15 +15,9 @@
 
 <body>
   <div id="content">
-    <div class="back-to-main-wrapper">
-      <a class="back-to-main link-underline" href="/">back to lucaionescu.github.io</a>
-    </div>
-    <div class="back-to-main-wrapper">
-      <a class="back-to-main link-underline" href="/site/ongoing/">back to ongoing</a>
-    </div>
     <article>
       <header class="post-margin-top">
-        <p class="post-date"> Jul 7, 2019</p>
+        <p class="font-s"> Jul 7, 2019</p>
         <h2 class="post-title">Python Data Analysis Tips</h2>
       </header>
       <div class="post-margin-top">
@@ -35,7 +29,7 @@
 
             <li class="post-margin-top">
               <strong>Wider Jupyter Notebook cells</strong>
-              <pre class="code-snippet">
+              <pre class="font-b code-color code-snippet">
 from IPython.core.display import display, HTML
 
 display(HTML("&lt;style>.container { width:100% !important; }&lt;/style>"))</pre>
@@ -45,21 +39,21 @@ display(HTML("&lt;style>.container { width:100% !important; }&lt;/style>"))</pre
               <strong>Print all of the outputs of a Jupyter Notebook cell</strong>
               <br>
               Usually, only the last output of a cell gets printed and for the others,
-              one has to call the <span class="inline-code">print</span> function.
-              <pre class="code-snippet">
+              one has to call the <span class="font-b code-color inline-code">print</span> function.
+              <pre class="font-b code-color code-snippet">
 from IPython.core.interactiveshell import InteractiveShell
 
 InteractiveShell.ast_node_interactivity = "all"</pre>
             </li>
 
             <li class="post-margin-top">
-              <strong>Handle paths with <span class="inline-code">pathlib</span></strong>
+              <strong>Handle paths with <span class="font-b code-color inline-code">pathlib</span></strong>
               <br>
-              This avoids multiple string concatenations and working with <span class="inline-code">os.path.join</span>
+              This avoids multiple string concatenations and working with <span class="font-b code-color inline-code">os.path.join</span>
               <br>
               There are also of course methods available for directory iteration,
               path manipulation or directory/file checks.
-              <pre class="code-snippet">
+              <pre class="font-b code-color code-snippet">
 from pathlib import Path
 
 data_path = Path('path/to/dataset')
@@ -73,7 +67,7 @@ for file in train_path.iterdir():
 
             <li class="post-margin-top">
               <strong>Matrix multiplication using @</strong>
-              <pre class="code-snippet">
+              <pre class="font-b code-color code-snippet">
 >>> import numpy as np
 
 >>> x = np.array([[1,2,3], [4,5,6]])
@@ -84,7 +78,7 @@ array([[28, 34],
             </li>
 
             <li class="post-margin-top">
-              <strong>Run scripts using the <span class="inline-code">-i</span> argument</strong>
+              <strong>Run scripts using the <span class="font-b code-color inline-code">-i</span> argument</strong>
               <br> This has two advantages:
               <br>
               1. Python will stay in the interpreter and you can still evaluate statements
@@ -92,7 +86,7 @@ array([[28, 34],
               <br>
               2. If an error occurs, you can call the Python debugger
               while being in the interpreter:
-              <pre class="code-snippet">
+              <pre class="font-b code-color code-snippet">
 import pdb
 pdb.pm()</pre>
               <a class="link-underline" target="_blank"
@@ -101,14 +95,14 @@ pdb.pm()</pre>
 
             <li class="post-margin-top">
               <strong>Get higher-resolution matplotlib graphics for Retina screens</strong>
-              <pre class="code-snippet">
+              <pre class="font-b code-color code-snippet">
 %config InlineBackend.figure_format ='retina'</pre>
             </li>
 
             <li class="post-margin-top">
               <strong>Customize your Jupyter Notebook with custom CSS</strong>
               <br>
-              You can use a custom CSS file that has to be located in <span class="inline-code">~/.jupyter/custom/custom.css</span>
+              You can use a custom CSS file that has to be located in <span class="font-b code-color inline-code">~/.jupyter/custom/custom.css</span>
               where you can change the appearance of the notebook.
               <br>
               Check out my file <a class="link-underline" target="_blank" href="https://github.com/lucaionescu/dotfiles/blob/master/python/custom.css">in my dotfiles repository</a>,
