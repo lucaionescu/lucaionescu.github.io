@@ -50,6 +50,15 @@ ul {
   font-size: 1.2em;
 }
 
+.back-to-main-wrapper {
+  text-align: right;
+  margin-top: 10px;
+}
+
+.back-to-main {
+  font-size: 0.9em;
+}
+
 .post-list {
   margin-top: 15px;
 }
