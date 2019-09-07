@@ -12,7 +12,7 @@ body {
   font-size: 0.8em;
   line-height: 1.5em;
   color: #30303A;
-  background: #fafafa;
+  background: #ffffff;
 }
 
 h2 {
@@ -113,29 +113,18 @@ ul {
   margin-top: 40px;
 }
 
-.code-color {
-  color: #ffffff;
-  background: #000000;
-}
-
-.inline-code {
-  font-family: monospace;
-  font-weight: bold;
-  padding-left: 2px;
-  padding-right: 2px;
-  border-radius: 2px;
-}
-
-.code-snippet {
-  padding-left: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  white-space: pre;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  border-radius: 3px;
-}
-
 .sketch-list {
   line-height: 2em;
+}
+
+body .gist .gist-data {
+  background: #ffffff;
+}
+
+body .gist .markdown-body {
+  font-size: 0.8em;
+}
+
+body .gist .gist-meta {
+  display: none;
 }
