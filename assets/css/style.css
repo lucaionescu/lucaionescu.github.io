@@ -24,7 +24,7 @@ h2 {
 
 h3 {
   margin: 0px;
-  margin-top: 60px;
+  margin-top: 50px;
   padding-right: 5px;
 }
 
@@ -113,10 +113,6 @@ ul {
   margin-top: 40px;
 }
 
-.sketch-list {
-  line-height: 2em;
-}
-
 body .gist .gist-data {
   background: #ffffff;
 }
@@ -127,4 +123,8 @@ body .gist .markdown-body {
 
 body .gist .gist-meta {
   display: none;
+}
+
+.sketch-image {
+  margin-top: 10px;
 }
