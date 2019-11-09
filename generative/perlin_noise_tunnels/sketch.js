@@ -7,8 +7,14 @@ function Particle() {
   this.loc = createVector(random(width), random(height));
   this.vel = createVector(0, 0);
   this.i = random(-10, 10);
+  if (random() < 0.3) {
+    this.c = color(255, 255, 255, 10)
+  } else {
+    this.c = color(randomGaussian(200, 50), randomGaussian(200, 50), randomGaussian(50, 25), 10);
+  }
 
   this.display = function () {
+    stroke(this.c);
     point(this.loc.x, this.loc.y);
   }
 
@@ -17,7 +23,7 @@ function Particle() {
     this.loc.y += this.vel.y;
     this.vel = p5.Vector.fromAngle((noise(t, this.i) * TWO_PI) * 2);
     this.vel.add(p5.Vector.fromAngle((noise(this.loc.x / 100, this.loc.y / 100) * TWO_PI) * 3));
-    this.i += 0.01;
+    this.i += 0.001;
   }
 }
 
@@ -25,7 +31,6 @@ function setup() {
   pixelDensity(3);
 
   createCanvas(windowWidth, windowHeight);
-  stroke(255, 10);
   background("#19181a");
 
   for (let i = 0; i < n; i++) {
@@ -39,7 +44,7 @@ function draw() {
     particles[i].display();
   }
 
-  t += 0.01;
+  t += 0.001;
 }
 
 function keyPressed() {
