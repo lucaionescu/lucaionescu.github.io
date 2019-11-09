@@ -1,0 +1,27 @@
+html {
+  display: block;
+}
+
+body {
+  font-family: monospace;
+  font-size: 0.9em;
+  line-height: 1.6em;
+  overflow: hidden;
+  text-align: center;
+  color: #f9f9f7;
+  background: #19181a;
+}
+
+.info-area {
+  position: absolute;
+  text-align: left;
+}
+
+.link-underline {
+  color: #f9f9f7;
+  text-decoration: underline;
+}
+
+.link-underline:hover {
+  text-decoration: none;
+}
