@@ -1,4 +1,5 @@
 let sketch = function (p) {
+  let name = "rgb_blobs";
   let n_points = 200;
   let colors = [
     p.color(255, 0, 0),
