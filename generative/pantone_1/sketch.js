@@ -59,6 +59,6 @@ function keyPressed() {
     var date = today.getFullYear() + "_" + (today.getMonth() + 1) + "_" + today.getDate();
     var time = today.getHours() + "_" + today.getMinutes() + "_" + today.getSeconds();
     var fileName = name + "_" + date + "_" + time;
-    saveCanvas(fileName, "png")
+    saveCanvas(fileName, "png");
   }
 }
