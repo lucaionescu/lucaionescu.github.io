@@ -7,11 +7,7 @@ function Particle() {
   this.loc = createVector(random(width), random(height));
   this.vel = createVector(0, 0);
   this.i = random(-10, 10);
-  if (random() < 0.3) {
-    this.c = color(255, 255, 255, 10)
-  } else {
-    this.c = color(randomGaussian(200, 50), randomGaussian(200, 50), randomGaussian(50, 25), 10);
-  }
+  this.c = color(255, 255, 255, 10);
 
   this.display = function () {
     stroke(this.c);
