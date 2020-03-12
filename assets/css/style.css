@@ -15,6 +15,13 @@ body {
   background: #ffffff;
 }
 
+h1 {
+  margin: 0px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-right: 5px;
+}
+
 h3 {
   margin: 0px;
   margin-top: 50px;
@@ -31,9 +38,13 @@ ul {
 #content {
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
   max-width: 550px;
   width: 100%;
+}
+
+.gen-art-list {
+  line-height: 1em;
 }
 
 .font-s {
@@ -73,6 +84,11 @@ ul {
   font-weight: 700;
   margin-top: 10px;
   margin-right: 5px;
+  text-decoration: none;
+}
+
+.post-title:hover {
+  text-decoration: underline;
 }
 
 .post-title-projects {
@@ -82,20 +98,6 @@ ul {
 
 .project-description {
   margin-top: 5px;
-}
-
-.project-date {
-  text-align: left;
-  float: left;
-}
-
-.post-listing {
-  margin-top: 50px;
-}
-
-.project-image {
-  max-width: 100%;
-  margin-top: 10px;
 }
 
 .reading-list-paragraph-title {
