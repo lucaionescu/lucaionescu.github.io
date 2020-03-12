@@ -2,23 +2,48 @@ html {
   display: block;
 }
 
-a {
-  color: #30303A;
-  text-decoration: none;
-}
-
 body {
-  font-family: "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 0.95em;
+  font-family: "merriweather_regular", "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 0.8em;
   line-height: 1.5em;
   color: #30303A;
   background: #ffffff;
 }
 
+@media (max-width: 768px) {
+  header {
+    text-align: center;
+  }
+
+  nav {
+    position: static;
+  }
+}
+
+header {
+  position: relative;
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+
+nav {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+header nav a {
+  margin-right: 20px;
+}
+
+a {
+  color: #30303A;
+  text-decoration: none;
+}
+
 h1 {
   margin: 0px;
   margin-top: 50px;
-  margin-bottom: 50px;
   padding-right: 5px;
 }
 
@@ -45,14 +70,12 @@ ul {
 
 .gen-art-list {
   line-height: 1em;
+  column-count: 2;
 }
 
-.font-s {
-  font-size: 0.8em;
-}
-
-.font-b {
-  font-size: 1.2em;
+.gen-art-list li {
+  display: inline-block;
+  width: 100%;
 }
 
 .back-to-main-wrapper {
@@ -89,15 +112,6 @@ ul {
 
 .post-title:hover {
   text-decoration: underline;
-}
-
-.post-title-projects {
-  font-weight: 700;
-  padding-left: 0px;
-}
-
-.project-description {
-  margin-top: 5px;
 }
 
 .reading-list-paragraph-title {

@@ -1,0 +1,20 @@
+@font-face {
+  font-family: 'merriweather_bold';
+  src: url('/assets/fonts/merriweather/merriweather-bold-webfont.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'merriweather_italic';
+  src: url('/assets/fonts/merriweather/merriweather-italic-webfont.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'merriweather_regular';
+  src: url('/assets/fonts/merriweather/merriweather-regular-webfont.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
