@@ -10,20 +10,34 @@ body {
   background: #ffffff;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   header {
     text-align: center;
   }
 
-  nav {
+  header nav {
     position: static;
+  }
+
+  nav {
+    margin-top: 20px;
+  }
+
+  ol {
+    padding-inline-start: 20px;
+    }
+}
+
+@media (max-width: 320px) {
+  header nav a {
+    padding-right: 10px !important;
   }
 }
 
 header {
   position: relative;
   margin-top: 50px;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 
 nav {
@@ -33,7 +47,7 @@ nav {
 }
 
 header nav a {
-  margin-right: 20px;
+  padding-right: 20px;
 }
 
 a {
