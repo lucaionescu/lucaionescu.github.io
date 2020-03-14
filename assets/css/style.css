@@ -26,6 +26,13 @@ body {
   ol {
     padding-inline-start: 20px;
     }
+
+  .gen-art-list {
+      line-height: 1em;
+      column-count: 1 !important;
+      text-align: left;
+      padding-left: 20px;
+    }
 }
 
 @media (max-width: 320px) {
