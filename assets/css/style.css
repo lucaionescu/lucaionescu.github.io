@@ -78,7 +78,7 @@ ul {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 70px;
-  max-width: 600px;
+  max-width: 500px;
   width: 100%;
 }
 
@@ -142,4 +142,9 @@ body .gist .gist-meta {
 .sketch-image {
   margin-top: 10px;
   width: -webkit-fill-available;
+}
+
+.back-to-top {
+  margin-top: 50px;
+  text-align: right;
 }
