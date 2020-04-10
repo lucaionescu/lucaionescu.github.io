@@ -1,10 +1,31 @@
+@font-face {
+  font-family: 'merriweather_bold';
+  src: url('/assets/fonts/merriweather/merriweather-bold-webfont.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'merriweather_italic';
+  src: url('/assets/fonts/merriweather/merriweather-italic-webfont.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'merriweather_regular';
+  src: url('/assets/fonts/merriweather/merriweather-regular-webfont.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
 html {
   display: block;
 }
 
 body {
   font-family: "merriweather_regular", "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 0.8em;
+  font-size: 0.9em;
   line-height: 1.5em;
   color: #30303A;
   background: #ffffff;
@@ -141,7 +162,9 @@ body .gist .gist-meta {
 
 .sketch-image {
   margin-top: 10px;
-  width: -webkit-fill-available;
+  width: -moz-available;          /* WebKit-based browsers will ignore this. */
+  width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+  width: fill-available;
 }
 
 .back-to-top {
