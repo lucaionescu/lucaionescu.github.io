@@ -25,7 +25,7 @@ html {
 
 body {
   font-family: "merriweather_regular", "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 0.9em;
+  font-size: 1em;
   line-height: 1.5em;
   color: #30303A;
   background: #ffffff;
@@ -99,12 +99,22 @@ ol {
   padding-inline-start: 15px;
   }
 
-#content {
+.content {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 70px;
-  max-width: 500px;
+  max-width: 550px;
   width: 100%;
+}
+
+.genart-width {
+  max-width: 700px;
+}
+
+.genart-description {
+  max-width: 60%;
+  margin-top: 10px;
+  padding-bottom: 50px;
 }
 
 .back-to-main-wrapper {
@@ -174,4 +184,5 @@ body .gist .gist-meta {
 .back-to-top {
   margin-top: 50px;
   text-align: right;
+  font-size: 0.9em;
 }
