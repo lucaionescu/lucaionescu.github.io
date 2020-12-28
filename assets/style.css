@@ -31,30 +31,6 @@ body {
   background: #ffffff;
 }
 
-@media (max-width: 600px) {
-  header {
-    text-align: center;
-  }
-
-  header nav {
-    position: static;
-  }
-
-  nav {
-    margin-top: 20px;
-  }
-
-  ol {
-    padding-inline-start: 20px;
-    }
-}
-
-@media (max-width: 320px) {
-  header nav a {
-    padding-right: 10px !important;
-  }
-}
-
 header {
   position: relative;
   margin-top: 50px;
@@ -97,7 +73,7 @@ ul {
 
 ol {
   padding-inline-start: 15px;
-  }
+}
 
 .content {
   margin-left: auto;
@@ -107,27 +83,8 @@ ol {
   width: 100%;
 }
 
-.genart-width {
-  max-width: 700px;
-}
-
-.genart-description {
-  max-width: 60%;
-  margin-top: 10px;
-  padding-bottom: 50px;
-}
-
-.back-to-main-wrapper {
-  text-align: right;
-  margin-top: 10px;
-}
-
 .back-to-main {
   font-size: 0.9em;
-}
-
-.post-list {
-  margin-top: 15px;
 }
 
 .link-underline {
@@ -140,6 +97,10 @@ ol {
 
 .text-indent {
   margin-left: 5px;
+}
+
+.post-list {
+  margin-top: 15px;
 }
 
 .post-title {
@@ -156,33 +117,4 @@ ol {
 .reading-list-paragraph-title {
   margin-block-end: 0px;
   margin-block-start: 0px;
-}
-
-.post-margin-top {
-  margin-top: 50px;
-}
-
-body .gist .gist-data {
-  background: #ffffff;
-}
-
-body .gist .markdown-body {
-  font-size: 0.8em;
-}
-
-body .gist .gist-meta {
-  display: none;
-}
-
-.sketch-image {
-  margin-top: 10px;
-  width: -moz-available;
-  width: -webkit-fill-available;
-  width: fill-available;
-}
-
-.back-to-top {
-  margin-top: 50px;
-  text-align: right;
-  font-size: 0.9em;
 }
