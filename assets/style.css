@@ -21,6 +21,7 @@
 
 @media screen and (max-width: 768px) {
   header {
+    margin-top: 30px !important;
     display: flex;
     flex-direction: column;
     align-items: center;
