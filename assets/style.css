@@ -39,7 +39,7 @@ html {
 
 body {
   font-family: "merriweather_regular", "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 0.9em;
+  font-size: 0.95em;
   line-height: 1.5em;
   color: #30303A;
   background: #ffffff;
@@ -131,4 +131,8 @@ ol {
 .reading-list-paragraph-title {
   margin-block-end: 0px;
   margin-block-start: 0px;
+}
+
+.reading-log-item:hover {
+  opacity: .8;
 }
