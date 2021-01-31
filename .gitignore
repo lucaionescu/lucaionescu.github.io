@@ -1,3 +1,4 @@
 reading_log.txt
-reading_log_template.html
 render_reading_log.py
+
+templates/
