@@ -1,4 +1,6 @@
 reading_log.txt
 render_reading_log.py
-
-templates/
+node_modules
+package-lock.json
+package.json
+templates
